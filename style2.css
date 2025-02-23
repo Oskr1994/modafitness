@@ -111,31 +111,24 @@ body {
 .servicios {
     width: 100vw;
     background-color: rgba(0, 159, 227, 0.5);
-    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del elemento */
-    padding: 20px; /* Añade padding para evitar que el contenido toque los bordes */
 }
 
 .titulo-servicios {
     padding-top: 50px;
-    margin-left: 100px;
 }
 
 .bloques-servicios {
     display: flex; /* Hace que el contenedor use Flexbox */
     align-items: center;
     justify-content: center; /* Centra horizontalmente */
-    margin-left: 100px;
-    margin-right: 100px;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
 }
 
 .bloque1, .bloque2 {
     border: 2px solid white; /* Borde blanco */
     border-radius: 10px; /* Bordes redondeados */
     padding: 20px; /* Espaciado interno */
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
     color: white; /* Color del texto */
-    text-align: center; /* Centra el texto */
+    text-align: left; /* Centra el texto */
     margin: 20px; /* Margen alrededor del cuadro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
 }
