@@ -94,6 +94,7 @@ body {
 
 .textos-nosotros, .imagen-nosotros {
     flex: 1; /* Hace que cada columna ocupe el mismo espacio */
+    text-align: center; 
 }
 
 .textos-nosotros {
