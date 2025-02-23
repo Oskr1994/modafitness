@@ -87,14 +87,11 @@ body {
 .nosotros {
     background-color: white;
     width: 100vw;
-    padding: 20px; /* Añade padding para evitar que el contenido toque los bordes */
-    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del elemento */
+    display: flex;
+    justify-content: center;
 }
 
-.contenido-nosotros {
-    display: flex; /* Hace que el contenedor use Flexbox */
-    justify-content: space-between; /* Espacio entre las columnas */
-}
+
 
 .textos-nosotros, .imagen-nosotros {
     flex: 1; /* Hace que cada columna ocupe el mismo espacio */
