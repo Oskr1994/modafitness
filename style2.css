@@ -96,7 +96,7 @@ body {
     flex: 1; /* Hace que cada columna ocupe el mismo espacio */
 }
 .servicios {
-    background-color: #009FE3;
+    background-color: rgba(0, 159, 227, 0.5);
 }
     
 .titulo-servicios {
