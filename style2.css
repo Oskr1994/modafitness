@@ -24,31 +24,34 @@ body {
     display: flex; /* Usa flexbox para el diseño */
     justify-content: space-between; /* Espacio entre los elementos */
     align-items: center; /* Alinea los elementos al centro */
-    padding: 5px 5px; /* Espaciado interno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra de la barra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra de la barra */
     z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+    padding-left: 20px;
 }
 
 .nav-btn {
-    list-style: none; /* Elimina los estilos de lista */
+    list-style: none; /* Elimina los estilos de los botones*/
     display: flex; /* Usa flexbox para el diseño */
-    gap: 20px; /* Espacio entre los elementos */
     margin-right: 20px;
 }
-
 .nav-btn a {
+    padding: 10px;
     color: white;
     text-decoration: none;
 }
-
+.nav-btn a:hover {
+    background-color: white; /* Color de fondo al pasar el ratón por encima */
+    color: #009FE3;
+    border-color: #009FE3;
+    border-radius: 10px;
+}
 .inicio {
-    padding-top: 100px;
-    padding-bottom: 200px;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     text-align: center;
     box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del elemento */
+    padding-block: 100px;
 }
 
 .btn-inicio {
@@ -90,31 +93,94 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
+    padding-block: 100px;
 }
-
+.textos-nosotros {
+    padding-left: 50px;
+}
 .textos-nosotros, .imagen-nosotros {
     flex: 1; /* Hace que cada columna ocupe el mismo espacio */
 }
+
 .servicios {
     background-color: rgba(0, 159, 227, 0.5);
-}
+    padding-block: 100px;
     
-.titulo-servicios {
-    padding-top: 50px;
 }
-
+.titulo-servicios {
+    padding-left: 50px;
+    color: white;
+}
 .bloques-servicios {
     display: flex; /* Hace que el contenedor use Flexbox */
-    align-items: center;
+    align-items: stretch; /* Asegura que todos los elementos tengan la misma altura */
     justify-content: center; /* Centra horizontalmente */
 }
 
-.bloque1, .bloque2 {
+.bloque1, .bloque2, .bloque3 {
+    width: 200px;
     border: 2px solid white; /* Borde blanco */
     border-radius: 10px; /* Bordes redondeados */
     padding: 20px; /* Espaciado interno */
     color: white; /* Color del texto */
     text-align: left; /* Centra el texto */
     margin: 20px; /* Margen alrededor del cuadro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
+}
+.titulo1, .titulo2, titulo3 {
+    padding-left: 15px;
+}
+hr {
+    color: white;
+}
+.contacto {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-block: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.info-contacto {
+    text-align: left;
+    flex: 1;
+}
+.formulario {
+    border: 2px solid #007bb3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    flex: 1;
+    padding: 10px
+}
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input, .contacto textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    
+}
+.btn-enviar {
+    display: flex;
+    justify-content: center;
+}
+.formulario button {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #009FE3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.formulario button:hover {
+    background-color: white;
+    color: #009FE3;
+    border: 2px solid #009FE3;
 }
