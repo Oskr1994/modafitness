@@ -94,9 +94,6 @@ body {
 .contenido-nosotros {
     display: flex; /* Hace que el contenedor use Flexbox */
     justify-content: space-between; /* Espacio entre las columnas */
-    margin-left: 100px;
-    margin-right: 100px;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
 }
 
 .textos-nosotros, .imagen-nosotros {
