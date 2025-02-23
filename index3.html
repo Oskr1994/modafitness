@@ -12,8 +12,8 @@
         <div class="logo"><img src="imagenes/logo.png" alt="logo" width="70px"></div>
         <ul class="nav-btn">
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -55,21 +55,61 @@
     </div>
     <div class="bloques-servicios">
         <div class="bloque1">
-            <h1>Diseño<br>Digital</h1>
-            <p>Logotipo</p>
+            <h1 class="titulo1">Diseño<br>Digital</h1>
+            <hr>
+            <ul> 
+                <li>Logotipo.</li>
+                <li>Manual de marca.</li>
+                <li>Brandboard.</li>
+                <li>Diseño para redes<br>sociales y banners.</li>
+            </ul>
         </div>
         <div class="bloque2">
-            <h1>Diseño<br>Impreso</h1>
-            <p>Logotipo</p>
+            <h1 class="titulo2">Diseño<br>Impreso</h1>
+            <hr>
+            <ul>
+                <li>Bolantes.</li>
+                <li>Revistas.</li>
+                <li>Brochures.</li>
+                <li>Papeleria y más...</li>
+            </ul>
+        </div>
+        <div class="bloque3">
+            <h1 class="titulo3">Diseño<br>UX/UI</h1>
+            <hr>
+            <ul>
+                <li>Bolantes.</li>
+                <li>Revistas.</li>
+                <li>Brochures.</li>
+                <li>Papeleria y más...</li>
+            </ul></h1>
         </div>
     </div>
 </section> 
 
 <section id="contacto">
     <div class="contacto">
-        <!-- Contenido de la sección de contacto -->
+        <div class="info-contacto">
+            <h1>
+                ___<br>
+                Contactanos
+            </h1>
+            <h4>
+                TLF: +51 969-7920-34<br>
+                Instagram: @artzdisenografico
+            </h4>
+        </div>
+        <div class="formulario">
+            <h2>Contacto</h2>
+            <form action="https://example.com/contact" method="POST">
+                <input type="text" required value="Nombre" onclick="this.value=''">
+                <input type="email" required value="Email" onclick="this.value=''">
+                <textarea rows="4" required onclick="this.value=''">Escriba un mensaje</textarea>
+                <div class="btn-enviar"><button type="submit">Enviar</button></div>
+            </form>
+        </div>
     </div>
-</section> 
+</section>
 
 </body>
 </html>
