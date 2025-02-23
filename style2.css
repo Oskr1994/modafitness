@@ -95,7 +95,9 @@ body {
 .textos-nosotros, .imagen-nosotros {
     flex: 1; /* Hace que cada columna ocupe el mismo espacio */
 }
-
+.servicios {
+    background-color: #009FE3;
+    
 .titulo-servicios {
     padding-top: 50px;
 }
