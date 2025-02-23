@@ -89,9 +89,8 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
+    text-align: center; 
 }
-
-
 
 .textos-nosotros, .imagen-nosotros {
     flex: 1; /* Hace que cada columna ocupe el mismo espacio */
