@@ -1,68 +1,38 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EJ MODA FITNESS</title>
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <!-- Vincular el archivo CSS de Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/assets/icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Moda Fitness</title>
 </head>
 <body>
-    <!-- Barra superior con menú plegable -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <div class="container-fluid">
-            <!-- Lado izquierdo: Logo de la marca -->
-            <button class="btn btn-outline-logo border-0" type="button">
-                <img src="imagenes/ej moda png.png" alt="logo" style="width: 123.4px; height: 54.92px;">
-            </button>
-
-            <!-- Botón que activa el menú plegable (hamburger) en pantallas pequeñas -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menú de navegación plegable -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-end">
-                    <li class="nav-item">
-                        <button class="btn btn-outline-dark ms-2 border-0">Inicio</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-outline-dark ms-2 border-0">Catálogo</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-outline-dark ms-2 border-0">Carrito</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-outline-dark ms-2 border-0">Contacto</button>
-                    </li>
-                </ul>
-            </div>
+<section>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#inicio"><img src="Imagenes/logo-mf.png" alt="Logo ARTZ" width="150px"></a>
         </div>
+        <input type="checkbox" id="menu-boton" class="menu-plegable">
+        <label for="menu-boton" class="boton-plegable">
+            <img src="Imagenes/menu.png" alt="Menú" width="20px">
+        </label>
+        <ul class="nav-btn">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Catalogo</a></li>
+            <li><a href="#servicios">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
     </nav>
+</section>
 
-    <!-- Contenido de la página -->
-    <div class="container text-center">
-        <h1>Hola, Tienda en construcccion!</h1>
-        <a href="https://www.instagram.com/egmodafitness15/" target="_blank" class="btn btn-primary" style="background-color: white; color: black; border-color: black;">
-            Visítanos en Instagram
-        </a>
-        <img src="imagenes/imagen1.1.jpg" alt="logo" class="img-fluid"">
+<section id="inicio" >
+    <div class="inicio">
+        <p>TIENDA EN CONSTRUCION</p>
+        <img src="Imagenes/cono.png" alt="titulo" class="titulo" width="25px">
     </div>
-
-
-
-    <!-- Vincular el archivo JS de Bootstrap -->
-    <a href="https://api.whatsapp.com/send?phone=+51916875034&text=Hola%2C%20quiero%20más%20información" 
-       class="whatsapp-icon" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
-
-
-
+    <div class="imagen-inicio">
+        <img src="Imagenes/imagen1.jpg" alt="imagen1">
+        <a href="#" class="boton-centro">VISITANOS EN INSTAGRAM</a>
+</section> 
 </body>
 </html>
