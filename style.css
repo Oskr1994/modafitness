@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    scroll-behavior: smooth; /* Hace que el desplazamiento sea suave */
+}
+.navbar {
+    position: fixed; /* Fija el elemento en la ventana del navegador */
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos con espacio igual entre ellos */
+    align-items: end;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.nav-btn {
+    display: flex;
+    list-style: none;
+    padding-right: 15px;
+}
+.nav-btn a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.nav-btn a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.menu-plegable {
+    display: none;
+    margin: 0;
+}
+.boton-plegable {
+    display: none;
+    margin: 0;
+}
+.logo {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+.inicio {
+    background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.2em;
+}
+p {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.imagen-inicio {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative;
+    width: 100%; /* Ajusta según el tamaño deseado */
+    background-color: #f0f0f0; /* Color de fondo para visualizar el contenedor */
+}
+.imagen-inicio img{
+    display: block;
+    width: 80%; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto;
+}
+.imagen-inicio a {
+    position: absolute; /* Posiciona el botón sobre la imagen */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el botón */
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+}
+.imagen-inicio a:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
