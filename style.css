@@ -54,21 +54,13 @@ html, body {
     align-items: center;
     color: white;
     font-size: 2.2em;
+    opacity: 0; /* Inicialmente invisible */
+    animation: aparecer 2s ease-in-out forwards;
 }
 p {
     color: black;
     margin: 0;
     padding: 0;
-}
-.imagen-inicio {
-    display: flex; /* Activa flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    position: relative;
-    width: 100%; /* Ajusta según el tamaño deseado */
-    background-color: #f0f0f0; /* Color de fondo para visualizar el contenedor */
-    opacity: 0; /* Inicialmente invisible */
-    animation: aparecer 2s ease-in-out forwards;
 }
 @keyframes aparecer {
     from {
@@ -77,6 +69,14 @@ p {
     to {
         opacity: 1;
     }
+}
+.imagen-inicio {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative;
+    width: 100%; /* Ajusta según el tamaño deseado */
+    background-color: #f0f0f0; /* Color de fondo para visualizar el contenedor */
 }
 .imagen-inicio img{
     display: block;
