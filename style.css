@@ -62,14 +62,6 @@ p {
     margin: 0;
     padding: 0;
 }
-@keyframes aparecer {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 .imagen-inicio {
     display: flex; /* Activa flexbox */
     justify-content: center; /* Centra horizontalmente */
@@ -77,6 +69,16 @@ p {
     position: relative;
     width: 100%; /* Ajusta según el tamaño deseado */
     background-color: #f0f0f0; /* Color de fondo para visualizar el contenedor */
+    opacity: 0; /* Inicialmente invisible */
+    animation: aparecer 2s ease-in-out forwards;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .imagen-inicio img{
     display: block;
