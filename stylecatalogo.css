@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     gap: 0px; /* Ajusta este valor según necesites */
+    margin-bottom: 15px;
 }
-
 .titulo-catalogo h1 {
     font-size: 2em;
     margin: 0; /* Elimina los márgenes predeterminados */
@@ -14,21 +14,30 @@
     font-size: 1em;
     margin: 0; /* Elimina los márgenes predeterminados */
 }
-
-
 .catalogo {
-    padding-left: 20px;
+    padding-left: 10px;
+    gap: 10px; /* Ajusta este valor según necesites */
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
 }
 .producto {
     display: block;
-    margin: 10px;
-    padding: 10px;
-    color: black;
     text-align: start;
     width: 250px;
+}
+.producto span {
+    color: #000;
+    font-size: 1em;
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+.producto p {
+    color: #0303039a;
+    font-size: 1em;
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+.producto img {
+    width: 100%;
 }
 .producto img {
     width: 100%;
@@ -36,9 +45,11 @@
 .producto a {
     color: white;
     text-decoration: none;
-    background-color: black;
-    padding: 5px;
-    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
 }
 .producto a:hover {
     background-color: white;
