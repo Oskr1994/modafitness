@@ -1,0 +1,46 @@
+.titulo-catalogo {
+    margin-top: 70px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Ajusta este valor según necesites */
+}
+
+.titulo-catalogo h1 {
+    font-size: 2em;
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+.titulo-catalogo p {
+    font-size: 1em;
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+
+
+.catalogo {
+    padding-left: 20px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.producto {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    text-align: start;
+    width: 250px;
+}
+.producto img {
+    width: 100%;
+}
+.producto a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.producto a:hover {
+    background-color: white;
+    color: black;
+}

@@ -46,16 +46,16 @@ html, body {
     text-decoration: none;
 }
 .inicio {
+    margin-top: 50px;
+    font-size: 2.5em;
     background-size: cover;
     background-position: center;
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 2.2em;
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
 }
-p {
+.texto {
     color: black;
     overflow: hidden; /* Oculta el texto que aún no se muestra */
     white-space: nowrap; /* Evita que el texto haga saltos de línea */
@@ -90,12 +90,12 @@ p {
 }
 .imagen-inicio img{
     display: block;
-    width: 80%; /* Ajusta el ancho de la imagen según sea necesario */
+    width: 90%; /* Ajusta el ancho de la imagen según sea necesario */
     height: auto;
 }
 .imagen-inicio a {
     position: absolute; /* Posiciona el botón sobre la imagen */
-    top: 90%; 
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%); /* Centra el botón */
     background-color: rgb(0, 0, 0, 0.8);
@@ -106,6 +106,7 @@ p {
     border-radius: 10px;
     border: 2px solid white;
     text-align: center;
+    font-size: 1.5em;
 }
 .imagen-inicio a:hover {
     background-color: white;
@@ -157,10 +158,13 @@ p {
         margin-top: 60px;
         font-size: 1.5em;
         display: flex;
-
+    }
+    .imagen-inicio a {
+        font-size: 1em;
     }
     .imagen-inicio img{
     display: block;
     width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
     height: auto;
+    }
 }
