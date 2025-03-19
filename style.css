@@ -52,7 +52,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     font-size: 2.2em;
 }
 p {
