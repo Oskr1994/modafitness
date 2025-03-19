@@ -41,6 +41,9 @@ html, body {
     margin: 0;
 }
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 10px;
     color: white;
     text-decoration: none;
