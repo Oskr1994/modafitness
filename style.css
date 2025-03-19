@@ -56,6 +56,7 @@ html, body {
     font-size: 2.2em;
 }
 p {
+    color: black;
     overflow: hidden; /* Oculta el texto que aún no se muestra */
     white-space: nowrap; /* Evita que el texto haga saltos de línea */
     width: 0; /* Inicia oculto */
