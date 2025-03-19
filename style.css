@@ -61,6 +61,17 @@ p {
     color: black;
     margin: 0;
     padding: 0;
+    width: 0; /* Inicia oculto */
+    animation: escribir 3s steps(15, end) forwards;
+}
+
+@keyframes escribir {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 .imagen-inicio {
     display: flex; /* Activa flexbox */
@@ -87,7 +98,7 @@ p {
 }
 .imagen-inicio a {
     position: absolute; /* Posiciona el botón sobre la imagen */
-    top: 50%; 
+    top: 90%; 
     left: 50%;
     transform: translate(-50%, -50%); /* Centra el botón */
     background-color: rgb(0, 0, 0, 0.8);
