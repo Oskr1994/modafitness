@@ -154,4 +154,7 @@ html, body {
     width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
     height: auto;
     }
+    .titulo img {
+    width: 50%;
+    }
 }
