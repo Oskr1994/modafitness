@@ -23,7 +23,7 @@ html, body {
     gap: 5px;
 }
 .nav-btn a {
-    padding: 5px;
+    padding: 4px;
     color: white;
     text-decoration: none;
 }
@@ -41,6 +41,7 @@ html, body {
     margin: 0;
 }
 .logo {
+    padding-left: 10px;
     color: white;
     text-decoration: none;
 }
