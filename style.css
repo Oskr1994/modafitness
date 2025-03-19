@@ -54,10 +54,13 @@ html, body {
     align-items: center;
     color: white;
     font-size: 2.2em;
+}
+p {
+    overflow: hidden; /* Oculta el texto que aún no se muestra */
+    white-space: nowrap; /* Evita que el texto haga saltos de línea */
     width: 0; /* Inicia oculto */
     animation: escribir 3s steps(15, end) forwards;
 }
-
 @keyframes escribir {
     from {
         width: 0;
@@ -65,11 +68,6 @@ html, body {
     to {
         width: 100%;
     }
-}
-p {
-    color: black;
-    margin: 0;
-    padding: 0;
 }
 .imagen-inicio {
     display: flex; /* Activa flexbox */
