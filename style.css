@@ -9,7 +9,6 @@ html, body {
     position: fixed; /* Fija el elemento en la ventana del navegador */
     width: 100vw;
     margin: 0;
-    padding: 0;
     background-color: black;
     display: flex;
     justify-content: space-between; /* Distribuye los elementos con espacio igual entre ellos */
@@ -20,16 +19,17 @@ html, body {
 .nav-btn {
     display: flex;
     list-style: none;
-    padding-right: 15px;
+    padding-right: 20px;
+    gap: 5px;
 }
 .nav-btn a {
-    padding: 10px;
+    padding: 5px;
     color: white;
     text-decoration: none;
 }
 .nav-btn a:hover {
-    background-color: white;
-    color: black;
+    color: red;
+    box-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 20px #ff1a1a;
     border-radius: 5px;
 }
 .menu-plegable {
@@ -45,30 +45,19 @@ html, body {
     color: white;
     text-decoration: none;
 }
-.inicio {
-    margin-top: 50px;
-    font-size: 2.5em;
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 60px;
     background-size: cover;
     background-position: center;
-    display: flex; /* Usa Flexbox */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    text-align: center; /* Asegura que el texto esté centrado */
+    color: white;
+    text-align: center;
 }
-.texto {
-    color: black;
-    overflow: hidden; /* Oculta el texto que aún no se muestra */
-    white-space: nowrap; /* Evita que el texto haga saltos de línea */
-    width: 0; /* Inicia oculto */
-    animation: escribir 3s steps(15, end) forwards;
-}
-@keyframes escribir {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+.titulo img {
+    width: 30%;
 }
 .imagen-inicio {
     display: flex; /* Activa flexbox */
@@ -94,24 +83,23 @@ html, body {
     height: auto;
 }
 .imagen-inicio a {
+    display: inline-block;
     position: absolute; /* Posiciona el botón sobre la imagen */
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%); /* Centra el botón */
-    background-color: rgb(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 5px;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
     text-decoration: none;
     font-size: 16px;
-    border-radius: 10px;
-    border: 2px solid white;
+    border-radius: 50px;
     text-align: center;
     font-size: 1.5em;
 }
 .imagen-inicio a:hover {
-    background-color: white;
-    color: black;
-    border-color: black;
+    color: red;
+    box-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 20px #ff1a1a;
 }
 
 @media (max-width: 768px) {

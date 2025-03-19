@@ -18,13 +18,17 @@
     padding-left: 10px;
     gap: 10px; /* Ajusta este valor según necesites */
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .producto {
-    display: block;
+    display: inline-block;
     text-align: start;
-    width: 250px;
+    width: 300px;
+    opacity: 0; /* Inicialmente invisible */
+    animation: aparecer 2s ease-in-out forwards;
+    padding-bottom: 15px;
 }
 .producto span {
     color: #000;
@@ -39,10 +43,11 @@
 .producto img {
     width: 100%;
 }
-.producto img {
-    width: 100%;
+.producto img:hover {
+    transform: scale(1.1);
 }
 .producto a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     background-color: rgb(0, 0, 0, 0.8);
@@ -53,5 +58,20 @@
 }
 .producto a:hover {
     background-color: white;
-    color: black;
+    color: red;
+    box-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 15px #ff1a1a;
+}
+
+@media (max-width: 768px) {
+    .catalogo {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        width: 100vw;
+        padding: 5px;
+    }
+    .producto {
+        width: 150px;
+    }
+
 }
