@@ -61,7 +61,6 @@
     color: red;
     box-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 15px #ff1a1a;
 }
-
 @media (max-width: 768px) {
     .catalogo {
         display: flex;

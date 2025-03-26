@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#inicio"><img src="imagenes/logo-mf.png" alt="Logo ARTZ" width="120px"></a>
+            </div>
+            <input type="checkbox" id="menu-boton" class="menu-plegable">
+            <label for="menu-boton" class="boton-plegable">
+                <img src="imagenes/menu.png" alt="Menú" width="30px">
+            </label>
+            <ul class="nav-btn">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="#servicios">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </section>
+    <h2>Carrito de Compras</h2>
+    <div id="carrito"></div>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    <a href="index.html">Volver a la tienda</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            actualizarCarrito();
+        });
+
+        function actualizarCarrito() {
+            const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+            const carritoHTML = document.querySelector("#carrito");
+            carritoHTML.innerHTML = "";
+
+            let total = 0;
+            carrito.forEach(item => {
+                total += item.precio * item.cantidad;
+                carritoHTML.innerHTML += `
+                    <div class="item">
+                        <span>${item.nombre} - $${item.precio} x ${item.cantidad}</span>
+                        <button onclick="eliminarDelCarrito('${item.id}')">Eliminar</button>
+                    </div>
+                `;
+            });
+
+            carritoHTML.innerHTML += `<p>Total: $${total}</p>`;
+        }
+
+        function eliminarDelCarrito(id) {
+            let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+            carrito = carrito.filter(item => item.id !== id);
+
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            actualizarCarrito();
+        }
+
+        function vaciarCarrito() {
+            localStorage.removeItem("carrito");
+            actualizarCarrito();
+        }
+    </script>
+</body>
+</html>
