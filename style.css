@@ -45,6 +45,10 @@ html, body {
     color: white;
     text-decoration: none;
 }
+.carrito {
+    display: flex;
+    
+}
 .titulo {
     display: flex;
     justify-content: center;
