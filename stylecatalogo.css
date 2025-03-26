@@ -62,64 +62,6 @@
     color: red;
     box-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 15px #ff1a1a;
 }
-
-#carrito-contenedor {
-    display: none;
-    position: fixed; /* Para que se muestre correctamente */
-    top: 50px;
-    right: 10px;
-    width: 300px;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    visibility: hidden; /* Se mantiene oculto hasta que se active */
-    transition: visibility 0.3s, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
-
-#carrito-contenedor.mostrar {
-    visibility: visible;
-    opacity: 1;
-}
-
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-#carrito-contenedor h2 {
-    margin-top: 0;
-}
-
-.item-carrito {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.eliminar {
-    background: red;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.eliminar:hover {
-    background: darkred;
-}
-
-
 @media (max-width: 768px) {
     .catalogo {
         display: flex;
