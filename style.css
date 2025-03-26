@@ -46,8 +46,8 @@ html, body {
     text-decoration: none;
 }
 .carrito {
-    display: flex;
-    
+    width: 100%;
+    text-align: right;
 }
 .titulo {
     display: flex;
