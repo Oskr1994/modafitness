@@ -49,6 +49,12 @@ html, body {
 .boton-plegable-car {
     cursor: pointer;
 }
+.vaciar-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 #carrito {
     display: none;
@@ -62,10 +68,11 @@ html, body {
     background: rgb(0, 0, 0, 0.9);
     box-shadow: 0 10px 10px rgba(255, 0, 0, 0.5);
     color: white;
+    max-height: 300px; /* Ajusta la altura según lo necesites */
+    overflow-y: auto; /* Activa el scroll vertical cuando sea necesario */
 }
-
 #carrito a {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     margin: 5px;
@@ -80,12 +87,14 @@ html, body {
     display: none;
 }
 #car-boton:checked ~ #carrito {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
 .carrito-list {
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 table {
     align-items: center;
