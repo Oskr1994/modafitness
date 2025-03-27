@@ -12,10 +12,32 @@
 <section>
     <nav class="navbar">
         <div class="logo">
-            <a href="#inicio"><img src="imagenes/logo-mf.png" alt="Logo ARTZ" width="120px"></a>
+            <a href="#inicio"><img src="imagenes/logo-mf.png" alt="Logo ARTZ" width="100px"></a>
         </div>
         <div class="carrito">
-            <a href="/carrito.html"><img src="/imagenes/carrito-de-compras-blanco.png" alt="carrito" width="30px"></a>
+            <ul>
+                <li>
+                    <input type="checkbox" id="car-boton" class="carrito-plegable">
+                    <label for="car-boton" class="boton-plegable-car">
+                        <img src="imagenes/carrito-de-compras-blanco.png" alt="Menú" width="30px">
+                    </label>
+                    <div id="carrito">
+                        <table id="listacarrito" class="carrito-list">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="productoscarrito"></tbody>
+                        </table>
+                        <a href="#" id="vaciarcarrito" class="boton-vaciar">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
         </div>
         <input type="checkbox" id="menu-boton" class="menu-plegable">
         <label for="menu-boton" class="boton-plegable">
@@ -37,13 +59,13 @@
         <p>Hombres</p>
     </div>
 
-    <div class="catalogo">
+    <div id="listaproductos" class="catalogo">
         <div class="producto">
             <img src="catalogo-hombre/polo-dragonpharma-negro2.jpeg" alt="Polo DragonPharma Negro">
-            <p><span>Polo DragonPharma</span><br>
-                Color: Negro<br>
+            <h3>Polo DragonPharma</h3>
+                <p>Color: Negro<br>
                 Tallas: Oversized<br>
-                S/ 70.00
+                <span>S/ 70.00</span>
             </p>
             <button class="agregar" data-id="1" data-nombre="Polo DragonPharma Negro" data-precio="70">
                 Agregar al carrito
@@ -52,10 +74,10 @@
 
         <div class="producto">
             <img src="catalogo-hombre/polo-dragonpharma-blanco1.jpeg" alt="Polo DragonPharma Blanco">
-            <p><span>Polo DragonPharma</span><br>
-                Color: Blanco<br>
+            <h3>Polo DragonPharma</h3>
+                <p>Color: Blanco<br>
                 Tallas: Oversized<br>
-                S/ 70.00
+                <span>S/ 70.00</span>
             </p>
             <button class="agregar" data-id="2" data-nombre="Polo DragonPharma Blanco" data-precio="70">
                 Agregar al carrito
@@ -64,10 +86,10 @@
 
         <div class="producto">
             <img src="catalogo-hombre/biviri-gymshark-plomo1.jpeg" alt="Bivirí GymShark">
-            <p><span>Bivirí GymShark</span><br>
-                Color: Blanco<br>
+            <h3>Bivirí GymShark</h3>
+                <p>Color: Blanco<br>
                 Tallas: Oversized<br>
-                S/ 70.00
+                <span>S/ 70.00</span>
             </p>
             <button class="agregar" data-id="3" data-nombre="Bivirí GymShark Blanco" data-precio="70">
                 Agregar al carrito
@@ -76,10 +98,10 @@
 
         <div class="producto">
             <img src="catalogo-hombre/polo-dragon-marron1.jpeg" alt="Polo DragonPharma Marrón">
-            <p><span>Polo DragonPharma</span><br>
-                Color: Marrón<br>
+            <h3>Polo DragonPharma</h3>
+                <p>Color: Marrón<br>
                 Tallas: Oversized<br>
-                S/ 70.00
+                <span>S/ 70.00</span>
             </p>
             <button class="agregar" data-id="4" data-nombre="Polo DragonPharma Marrón" data-precio="70">
                 Agregar al carrito
@@ -88,10 +110,10 @@
 
         <div class="producto">
             <img src="catalogo-hombre/polo-gragon-negrochino.jpeg" alt="Polo DragonPharma Negro con Dragón">
-            <p><span>Polo DragonPharma</span><br>
-                Color: Negro con Dragón<br>
+            <h3>DragonPharma</h3>
+                <p>Color: Negro con Dragón<br>
                 Tallas: Oversized<br>
-                S/ 70.00
+                <span>S/ 70.00</span>
             </p>
             <button class="agregar" data-id="5" data-nombre="Polo DragonPharma Negro con Dragón" data-precio="70">
                 Agregar al carrito
@@ -100,10 +122,10 @@
 
         <div class="producto">
             <img src="catalogo-hombre/biviri-gragonamericano-negro1.jpeg" alt="Bivirí DragonPharma Negro con Bandera Americana">
-            <p><span>Bivirí DragonPharma</span><br>
-                Color: Negro con Bandera Americana<br>
+            <h3>Bivirí DragonPharma</h3>
+                <p>Color: Negro con Bandera Americana<br>
                 Tallas: Oversized<br>
-                S/ 70.00
+                <span>S/ 70.00</span>
             </p>
             <button class="agregar" data-id="6" data-nombre="Bivirí DragonPharma Negro con Bandera Americana" data-precio="70">
                 Agregar al carrito
@@ -112,10 +134,10 @@
 
         <div class="producto">
             <img src="catalogo-hombre/polo-dragonamericana-negro1.jpeg" alt="Polo DragonPharma Negro con Bandera Americana">
-            <p><span>Polo DragonPharma</span><br>
-                Color: Negro con Bandera Americana<br>
+            <h3>Polo DragonPharma</h3>
+                <p>Color: Negro con Bandera Americana<br>
                 Tallas: Oversized<br>
-                S/ 70.00
+                <span>S/ 70.00</span>
             </p>
             <button class="agregar" data-id="7" data-nombre="Polo DragonPharma Negro con Bandera Americana" data-precio="70">
                 Agregar al carrito
@@ -124,10 +146,10 @@
 
         <div class="producto">
             <img src="catalogo-hombre/polo-dragonbeige1.jpeg" alt="Polo DragonPharma Beige con Dragón">
-            <p><span>Polo DragonPharma</span><br>
-                Color: Beige con Dragón<br>
+            <h3>Polo DragonPharma</h3>
+                <p>Color: Beige con Dragón<br>
                 Tallas: Oversized<br>
-                S/ 80.00
+                <span>S/ 80.00</span>
             </p>
             <button class="agregar" data-id="8" data-nombre="Polo DragonPharma Beige con Dragón" data-precio="80">
                 Agregar al carrito

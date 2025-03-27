@@ -31,13 +31,8 @@
     animation: aparecer 2s ease-in-out forwards;
     padding-bottom: 15px;
 }
-.producto span {
-    color: #000;
-    font-size: 1em;
-    margin: 0; /* Elimina los márgenes predeterminados */
-}
 .producto p {
-    color: #0303039a;
+    color: #030303ce;
     font-size: 1em;
     margin: 0; /* Elimina los márgenes predeterminados */
 }
@@ -45,7 +40,16 @@
     width: 100%;
 }
 .producto img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+.producto h3 {
+    font-size: 1.1em;
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+.producto span {
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
 }
 .producto button {
     display: inline-block;
@@ -65,7 +69,7 @@
 @media (max-width: 768px) {
     .catalogo {
         display: flex;
-        justify-content: start;
+        justify-content: center;
         flex-wrap: wrap;
         width: 100vw;
         padding: 5px;
