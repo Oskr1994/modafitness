@@ -1,6 +1,7 @@
+// Selección correcta de elementos
 const carrito = document.querySelector('#carrito');
-const productoscarrito = document.querySelector('#productoscarrito tbody');
-const vaciarcarrito = document.querySelector('#vaciar-carrito');
+const productoscarrito = document.querySelector('#listacarrito tbody'); // Ahora seleccionamos correctamente el tbody
+const vaciarcarrito = document.querySelector('#vaciarcarrito'); // Estaba mal escrito en el código original
 const listaproductos = document.querySelector('#listaproductos');
 let productocarrito = [];
 
@@ -11,6 +12,7 @@ function cargarEventListeners() {
     vaciarcarrito.addEventListener('click', vaciarCarrito);
 }
 
+// Agregar producto al carrito
 function agregarProducto(e) {
     if (e.target.classList.contains('agregar')) {
         const productoseleccionado = e.target.parentElement;
@@ -41,26 +43,26 @@ function leerdatosproducto(producto) {
 function carritohtml() {
     console.log("Generando HTML del carrito...");
     console.log("Productos actuales:", productocarrito);
-    console.log("listacarrito:", listacarrito); 
-    if (!listacarrito) {
-        console.error("Error: listacarrito no se encuentra en el DOM");
+
+    if (!productoscarrito) {
+        console.error("Error: productoscarrito no se encuentra en el DOM");
         return;
     }
     
     // Limpiar HTML previo
-    listacarrito.innerHTML = ""; 
+    productoscarrito.innerHTML = "";
 
     productocarrito.forEach(producto => {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td><img src="${producto.imagen}" width="50"></td>
             <td>${producto.nombre}</td>
-            <td>${producto.precio}</td>
+            <td>S/ ${producto.precio.toFixed(2)}</td>
             <td>${producto.cantidad}</td>
-            <td>${producto.precio * producto.cantidad}</td>
+            <td>S/ ${(producto.precio * producto.cantidad).toFixed(2)}</td>
             <td><button class="borrar-producto" data-id="${producto.id}">X</button></td>
         `;
 
-        listacarrito.appendChild(row);
+        productoscarrito.appendChild(row);
     });
 }

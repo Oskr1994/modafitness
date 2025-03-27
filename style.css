@@ -49,22 +49,18 @@ html, body {
 .boton-plegable-car {
     cursor: pointer;
 }
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+
 #carrito {
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 0;
     width: 100%;
-    top: 50px;
+    right: 0;
+    top: 60px;
     background: rgb(0, 0, 0, 0.9);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px rgba(255, 0, 0, 0.5);
     color: white;
 }
 
@@ -85,18 +81,25 @@ ul {
 }
 #car-boton:checked ~ #carrito {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .carrito-list {
     width: 100%;
-    padding: 10px;
 }
-tbody {
-    display: flex;
-    flex-direction: column;
+table {
     align-items: center;
     justify-content: center;
-    height: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+
 .logo {
     padding-left: 10px;
     color: white;
