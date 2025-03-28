@@ -60,7 +60,7 @@ function carritohtml() {
             <td>S/ ${producto.precio.toFixed(2)}</td>
             <td>${producto.cantidad}</td>
             <td>S/ ${(producto.precio * producto.cantidad).toFixed(2)}</td>
-            <td><button class="borrar-producto" data-id="${producto.id}">X</button></td>
+            <td><button class="boton-vaciar" data-id="${producto.id}">X</button></td>
         `;
 
         productoscarrito.appendChild(row);
