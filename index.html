@@ -42,11 +42,11 @@
                 <img src="imagenes/menu.png" alt="Menú" width="30px">
             </label>
             <ul class="nav-btn">
-                <li><a href="#" onclick="mostrarInicio(); return false;">Inicio</a></li>
-                <li><a href="#" onclick="cargarPagina('catalogo.html'); return false;">Catalogo</a></li>
-                <li><a href="#" onclick="cargarPagina('nosotros.html'); return false;">Nosotros</a></li>
-                <li><a href="#" onclick="cargarPagina('contacto.html'); return false;">Contacto</a></li>
-            </ul>
+                <li><a href="#" class="menu-link" onclick="mostrarInicio(); return false;">Inicio</a></li>
+                <li><a href="#" class="menu-link" onclick="cargarPagina('catalogo.html'); return false;">Catálogo</a></li>
+                <li><a href="#" class="menu-link" onclick="cargarPagina('nosotros.html'); return false;">Nosotros</a></li>
+                <li><a href="#" class="menu-link" onclick="cargarPagina('contacto.html'); return false;">Contacto</a></li>
+            </ul>            
         </nav>
     </section>
     
@@ -58,8 +58,8 @@
         <img src="catalogo-hombre/colage2.jpg" alt="imagencollage">
         <a href="#" onclick="cargarPagina('catalogo.html'); return false;">CATALOGO HOMBRES</a></li>
     </div>
-    <div>
-        <h2>Moda Fitness - Tu Tienda Deportiva Online</h1>
+    <div class="animado oculto">
+        <h1>Moda Fitness - Tu Tienda Deportiva Online</h1>
         <p>En Moda Fitness, te ofrecemos un catálogo exclusivo de ropa deportiva
         para hombres y mujeres, así como accesorios, gorras y todo lo que necesitas 
         para entrenar con estilo y comodidad. Contamos con envíos a todo Lima y provincias, 
@@ -107,6 +107,7 @@
 
 <script src="js/car.js"></script>
 <script src="js/app.js"></script>
+<script src="js/animaciones.js"></script>
 
 </body>
 </html>
